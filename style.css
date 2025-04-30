@@ -1,0 +1,204 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    /* Warna latar belakang yang cerah */
+    color: #333;
+    /* Warna teks */
+    display: flex;
+    flex-direction: column;
+    /* Mengatur body sebagai kolom */
+    min-height: 100vh;
+    /* Memastikan body mengisi seluruh tinggi viewport */
+}
+
+/* Gaya untuk header */
+header {
+    background-color: #CBDCEB;
+    /* Biru utama */
+    color: #d39f04;
+    padding: 20px;
+    text-align: center;
+    display: inline;
+}
+
+/* Gaya untuk navigasi */
+nav {
+    background-color: #d39f04;
+    /* Biru lebih gelap untuk navigasi */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    list-style-type: none;
+    /* Menghilangkan bullet points */
+    justify-content: center;
+    /* Memusatkan item navigasi */
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+    margin: 0 15px;
+    /* Jarak antar item navigasi */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* Garis bawah saat hover */
+}
+
+/* Gaya untuk konten utama */
+main {
+    padding: 20px;
+    flex: 1;
+    /* Memungkinkan main untuk mengisi ruang yang tersedia */
+    display: flex;
+    flex-direction: column;
+    /* Mengatur konten dalam kolom */
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+}
+
+
+/* Gaya untuk artikel */
+article {
+    margin-bottom: 20px;
+    border: 1px solid #d39f04;
+    /* Garis biru di sekitar artikel */
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e7f3ff;
+    /* Latar belakang artikel */
+}
+
+/* Gaya untuk gambar */
+img {
+    width: 100%;
+    /* Atur lebar gambar agar memenuhi kontainer */
+    height: auto;
+    /* Pertahankan rasio aspek asli */
+    max-width: 500px;
+    /* Atur lebar maksimum gambar */
+    max-height: 500px;
+    /* Atur tinggi maksimum gambar */
+    object-fit: cover;
+    /* Memastikan gambar mengisi area tanpa merusak proporsi */
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #fafafa;
+    /* Biru tombol */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d39f04;
+   
+}
+
+
+footer {
+    background-color: #d39f04;
+    
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #000000;
+  
+}
+
+p {
+    line-height: 1.6;
+    /* Jarak antar baris */
+}
+
+/* Gaya untuk aside */
+aside {
+    background-color: #e7f3ff;
+    /* Latar belakang aside */
+    padding: 15px;
+    border: 1px solid #0d0d0d;
+    /* Garis biru di sekitar aside */
+    border-radius: 5px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #010101;
+    /* Garis biru untuk tabel */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #9ea0aa;
+    /* Latar belakang header tabel */
+    color: white;
+    /* Warna teks header tabel */
+}
+
+figure {
+    text-align: center;
+    /* Rata tengah untuk gambar dan caption */
+}
+
+figcaption {
+    font-style: italic;
+    /* Miring untuk caption */
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding-inline: 0;
+    }
+
+    aside {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
